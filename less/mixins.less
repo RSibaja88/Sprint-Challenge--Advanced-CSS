@@ -1,1 +1,30 @@
 // Mixins Here
+@import "variables";
+
+.flexCol(@flex: flex; @column: column;){
+	display: @flex;
+	flex-direction: @column;
+}
+
+.flexRowC(@flex: flex; @row: row; @center: center;){
+	display: @flex;
+    flex-direction: @row;
+    align-items: @center;	
+}
+
+.flexRow(@flex: flex; @row: row;){
+	display: @flex;
+	flex-direction: @row;
+	
+}
+
+.navText(@none: none; @color: @ebony-clay; @rem: @rem1;){
+    text-decoration: @none;
+    color: @color;
+    font-size: @rem;
+}
+
+.animated {
+    animation-duration: 6s;
+    animation-delay: 0s;
+}

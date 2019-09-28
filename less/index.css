@@ -145,9 +145,6 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
-h1 {
-  font-size: 4rem;
-}
 h2 {
   font-size: 3.2rem;
 }
@@ -155,7 +152,7 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   line-height: 1.4;
 }
 .container {
@@ -163,83 +160,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.animated {
-  animation-duration: 6s;
-  animation-delay: 0s;
-}
 .navBar {
-  max-width: 825px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 2%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2%;
 }
 .navBar .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 32%;
-  padding-right: 30%;
-  padding-bottom: 1.5%;
+  margin-left: 27%;
+  margin-right: 27%;
+  font-size: 3rem;
 }
 .navBar .links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-right: 18%;
-  padding-left: 18%;
+  justify-content: space-between;
+  width: 32%;
+  padding-right: 1.5%;
+  padding-left: 8%;
 }
 .navBar .links a {
   text-decoration: none;
-  color: #23293B;
-  font-size: 1.75rem;
-}
-.navBar .links a:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-.headimg {
-  margin-top: 1%;
-  border-radius: 8px;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .home .intro h2 {
   padding: 15px;

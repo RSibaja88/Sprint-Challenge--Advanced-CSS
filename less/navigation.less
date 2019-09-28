@@ -1,1 +1,61 @@
 // Navigation code here
+
+@import "variables";
+@import "mixins";
+
+.navBar {
+        max-width: 825px;
+        width: 100%;
+        margin: 0 auto; 
+        margin-top: 2%;
+        .flexCol(flex, column); 
+        margin-bottom: 2%;
+
+    .header {
+        // border: 2px solid dodgerblue;
+        .flexRowC(flex, row, center);
+        padding-left: 32%;
+        padding-right: 30%;
+        padding-bottom: 1.5%;
+
+      }
+    
+        .links {
+          // border: 2px solid rgb(107, 245, 176);
+              .flexRowC(flex, row, center);
+              justify-content: space-evenly;
+              width: 100%;
+              padding-right: 18%;
+              padding-left: 18%;
+              
+              
+              a {
+                .navText(@none: none; @ebony-clay; @rem2);
+
+                &:hover {
+                            animation: shake 0.5s;
+                            animation-iteration-count: infinite;
+                          }
+
+                          @keyframes shake {
+                            0% { transform: translate(1px, 1px) rotate(0deg); }
+                            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                            20% { transform: translate(-3px, 0px) rotate(1deg); }
+                            30% { transform: translate(3px, 2px) rotate(0deg); }
+                            40% { transform: translate(1px, -1px) rotate(1deg); }
+                            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                            60% { transform: translate(-3px, 1px) rotate(0deg); }
+                            70% { transform: translate(3px, 1px) rotate(-1deg); }
+                            80% { transform: translate(-1px, -1px) rotate(1deg); }
+                            90% { transform: translate(1px, 2px) rotate(0deg); }
+                            100% { transform: translate(1px, -2px) rotate(-1deg); }
+                          }
+                    }
+                  }
+                }
+      
+     .headimg {
+         margin-top: 1%;
+         border-radius: 8px;
+     } 
+    
