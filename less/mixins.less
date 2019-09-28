@@ -1,1 +1,60 @@
 // Mixins Here
+@import "variables";
+
+.flexCol(@flex: flex; @column: column;){
+	display: @flex;
+	flex-direction: @column;
+}
+
+.flexRowC(@flex: flex; @row: row; @center: center;){
+	display: @flex;
+    flex-direction: @row;
+    align-items: @center;	
+}
+
+.cc{
+    justify-content: center;
+    text-align: center;
+}
+
+.leftBtn{
+    font-size: 20px;
+    margin: 4px 2px;
+    width: 40%;
+    height: 10%;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;      
+}
+
+.flexRow(@flex: flex; @row: row;){
+	display: @flex;
+	flex-direction: @row;
+	
+}
+
+.navText(@none: none; @color: @ebony-clay; @rem: @rem1;){
+    text-decoration: @none;
+    color: @color;
+    font-size: @rem;
+}
+
+.speven {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.bton {
+    .flexCol();
+    .cc();
+    .leftBtn();
+    background-color: @btn-bg-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@btn-bg-color, 10%)
+      }
+}

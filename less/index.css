@@ -1,26 +1,10 @@
-.cc {
-  justify-content: center;
-  text-align: center;
-}
-.leftBtn {
-  font-size: 20px;
-  margin: 4px 2px;
-  width: 40%;
-  height: 10%;
-  box-shadow: 10px 10px 5px grey;
-  border-radius: 10px;
-  color: white;
-  padding: 20px;
-}
-.speven {
-  display: flex;
-  justify-content: space-evenly;
-}
 .bton {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: #22283A;
+  text-decoration: none;
   font-size: 20px;
   margin: 4px 2px;
   width: 40%;
@@ -29,8 +13,6 @@
   border-radius: 10px;
   color: white;
   padding: 20px;
-  background-color: #22283A;
-  text-decoration: none;
   cursor: pointer;
 }
 .bton:hover {
@@ -218,39 +200,19 @@ p {
   padding-right: 30%;
   padding-bottom: 1.5%;
 }
-@media (max-width: 500px) {
-  .navBar .header {
-    padding-left: 20%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-  }
-}
 .navBar .links {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  display: flex;
   justify-content: space-evenly;
   width: 100%;
   padding-right: 18%;
   padding-left: 18%;
 }
-@media (max-width: 500px) {
-  .navBar .links {
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 2%;
-  }
-}
 .navBar .links a {
   text-decoration: none;
   color: #23293B;
   font-size: 1.75rem;
-}
-@media (max-width: 500px) {
-  .navBar .links a {
-    font-size: 1.5rem;
-    justify-content: space-between;
-  }
 }
 .navBar .links a:hover {
   animation: shake 0.5s;
@@ -316,33 +278,11 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .home .space-images {
-    display: none;
-  }
-}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-}
-.home .blastM {
-  display: none;
-}
-@media (max-width: 500px) {
-  .home .blastM {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .home .blastM img {
-    width: 100%;
-    border-radius: 35px;
-    height: 100%;
-    margin: 1%;
-    padding: 5%;
-  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -358,24 +298,10 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
-  flex-flow: wrap;
   justify-content: center;
-}
-@media (max-width: 500px) {
-  .home .walk {
-    display: flex;
-    flex-flow: wrap-reverse;
-    padding: 2%;
-  }
 }
 .home .walk .walk-text {
   width: 50%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text {
-    width: 100%;
-    margin: 1%;
-  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -383,11 +309,13 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .button {
+.home .walk .walk-text .btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: #22283A;
+  text-decoration: none;
   font-size: 20px;
   margin: 4px 2px;
   width: 40%;
@@ -396,28 +324,14 @@ footer {
   border-radius: 10px;
   color: white;
   padding: 20px;
-  background-color: #22283A;
-  text-decoration: none;
   cursor: pointer;
 }
-.home .walk .walk-text .button:hover {
+.home .walk .walk-text .btn:hover {
   background-color: #0f121a;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .button {
-    width: 100%;
-    height: 25%;
-  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-img {
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 .home .walk .walk-img img {
   width: 100%;

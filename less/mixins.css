@@ -1,0 +1,38 @@
+.cc {
+  justify-content: center;
+  text-align: center;
+}
+.leftBtn {
+  font-size: 20px;
+  margin: 4px 2px;
+  width: 40%;
+  height: 10%;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+.speven {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  width: 40%;
+  height: 10%;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  background-color: #22283A;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bton:hover {
+  background-color: #0f121a;
+}
