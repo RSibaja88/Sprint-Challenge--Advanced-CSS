@@ -12,6 +12,22 @@
     align-items: @center;	
 }
 
+.cc{
+    justify-content: center;
+    text-align: center;
+}
+
+.leftBtn{
+    font-size: 20px;
+    margin: 4px 2px;
+    width: 40%;
+    height: 10%;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;      
+}
+
 .flexRow(@flex: flex; @row: row;){
 	display: @flex;
 	flex-direction: @row;
@@ -24,26 +40,18 @@
     font-size: @rem;
 }
 
-.animated {
-    animation-duration: 6s;
-    animation-delay: 0s;
+.speven {
+    display: flex;
+    justify-content: space-evenly;
 }
 
+
 .bton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    .flexCol();
+    .cc();
+    .leftBtn();
     background-color: @btn-bg-color;
     text-decoration: none;
-    font-size: 20px;
-    margin: 4px 2px;
-    width: 40%;
-    height: 10%;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    color: white;
-    padding: 20px;  
     cursor: pointer;
 
     &:hover {

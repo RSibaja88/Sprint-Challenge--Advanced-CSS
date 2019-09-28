@@ -31,16 +31,21 @@ In meeting the minimum viable product (MVP) specifications listed below, your we
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
-
+<!-- MY ANSWERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive sites have multiple sites (code) for the different viewports or screens. Responsive designs are 1 site, but the site responds to the change in viewport or screen and the design changes accordingly. 
 
 2. Describe what it means to be mobile first vs desktop first.
+To design with mobile layout in mind, but add media break points to adjust the design as the screen size increases. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+It makes it to where 1 REM=10px.
 
 4. How would you describe preprocessing to someone new to CSS?
+LESS makes your CSS pretty, it compiles it neatly and organizes it. Your pre processor creates your CSS for you. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I like the having more power, less typing. My only complaint is that it takes me longer, for now. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -128,7 +133,7 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-* [ ] Introduce CSS animations to your site.
+* [X] Introduce CSS animations to your site.
 
 * [ ] Create a fixed navigation and add some opacity to the background
 

@@ -1,14 +1,8 @@
-.animated {
-  animation-duration: 6s;
-  animation-delay: 0s;
-}
-.bton {
-  display: flex;
-  flex-direction: column;
+.cc {
   justify-content: center;
   text-align: center;
-  background-color: #22283A;
-  text-decoration: none;
+}
+.leftBtn {
   font-size: 20px;
   margin: 4px 2px;
   width: 40%;
@@ -17,6 +11,26 @@
   border-radius: 10px;
   color: white;
   padding: 20px;
+}
+.speven {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  width: 40%;
+  height: 10%;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  background-color: #22283A;
+  text-decoration: none;
   cursor: pointer;
 }
 .bton:hover {

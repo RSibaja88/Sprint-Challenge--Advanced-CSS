@@ -1,3 +1,41 @@
+.cc {
+  justify-content: center;
+  text-align: center;
+}
+.leftBtn {
+  font-size: 20px;
+  margin: 4px 2px;
+  width: 40%;
+  height: 10%;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+.speven {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  width: 40%;
+  height: 10%;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  background-color: #22283A;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bton:hover {
+  background-color: #0f121a;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,30 +201,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.animated {
-  animation-duration: 6s;
-  animation-delay: 0s;
-}
-.bton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: #22283A;
-  text-decoration: none;
-  font-size: 20px;
-  margin: 4px 2px;
-  width: 40%;
-  height: 10%;
-  box-shadow: 10px 10px 5px grey;
-  border-radius: 10px;
-  color: white;
-  padding: 20px;
-  cursor: pointer;
-}
-.bton:hover {
-  background-color: #0f121a;
-}
 .navBar {
   max-width: 825px;
   width: 100%;
@@ -204,19 +218,39 @@ p {
   padding-right: 30%;
   padding-bottom: 1.5%;
 }
+@media (max-width: 500px) {
+  .navBar .header {
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+  }
+}
 .navBar .links {
-  display: flex;
   flex-direction: row;
   align-items: center;
+  display: flex;
   justify-content: space-evenly;
   width: 100%;
   padding-right: 18%;
   padding-left: 18%;
 }
+@media (max-width: 500px) {
+  .navBar .links {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+  }
+}
 .navBar .links a {
   text-decoration: none;
   color: #23293B;
   font-size: 1.75rem;
+}
+@media (max-width: 500px) {
+  .navBar .links a {
+    font-size: 1.5rem;
+    justify-content: space-between;
+  }
 }
 .navBar .links a:hover {
   animation: shake 0.5s;
@@ -261,6 +295,16 @@ p {
   margin-top: 1%;
   border-radius: 8px;
 }
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -272,11 +316,33 @@ p {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .blastM {
+  display: none;
+}
+@media (max-width: 500px) {
+  .home .blastM {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .home .blastM img {
+    width: 100%;
+    border-radius: 35px;
+    height: 100%;
+    margin: 1%;
+    padding: 5%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -292,10 +358,24 @@ p {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-flow: wrap-reverse;
+    padding: 2%;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 1%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -303,13 +383,11 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #22283A;
-  text-decoration: none;
   font-size: 20px;
   margin: 4px 2px;
   width: 40%;
@@ -318,27 +396,31 @@ p {
   border-radius: 10px;
   color: white;
   padding: 20px;
+  background-color: #22283A;
+  text-decoration: none;
   cursor: pointer;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text .button:hover {
   background-color: #0f121a;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .button {
+    width: 100%;
+    height: 25%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
